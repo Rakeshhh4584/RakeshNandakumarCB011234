@@ -946,3 +946,32 @@ h2 {
     display: block;
   }
 }
+
+.bookbutton{
+  margin-left: 40%;
+  border: #4CAF50 2px solid;
+  padding: 10px 12px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.book-now-button {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-button a {
+  color: #fff;
+}
+
+.bookbutton .book-now-button:hover {
+  background-color: #2f7232;
+}

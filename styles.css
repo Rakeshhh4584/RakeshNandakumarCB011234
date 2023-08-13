@@ -1,0 +1,694 @@
+h1 {
+  font-size: 38px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  background-image: url(Images/paymentheader.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*ticket sele*/
+
+h1 {
+  text-align: center;
+}
+
+#ticketSelection {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.ticketCategory {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  flex: 1;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #d08b3d;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.incrementBtn,
+.decrementBtn {
+  border-radius: 50%;
+  border: 1px solid black;
+  font-size: normal;
+  transition: all 0.4s;
+}
+
+.incrementBtn:hover,
+.decrementBtn:hover {
+  background-color: #b27630;
+  font-size: large;
+}
+
+input {
+  width: 40px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  background-color: inherit;
+}
+
+#storeSelectionBtn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #d08b3d;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.booking-form {
+  margin-bottom: 20px;
+}
+
+label,
+select,
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.summary {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+#continueBtn {
+  display: block;
+  margin: 10px auto;
+  margin-left: 17cm;
+  margin-top: 3.5cm;
+  padding: 10px 20px;
+  background-color: #d08b3d;
+  border: 1px solid black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+#continueBtn:hover {
+  background-color: #bb7e38;
+  font-size: 21px;
+  border: 2px solid black;
+}
+
+#continueBtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* experiment */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.dropdown-content.open {
+  display: block;
+}
+
+.dropdown-content label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.dropdown-content label {
+  display: flex;
+}
+
+.dropdown-content label input {
+  height: 15px;
+  padding-left: 10px;
+  float: left;
+}
+
+.dropdown button {
+  font-size: larger;
+  padding: 12px 14px;
+  border-radius: 50px;
+  border: #005818 2px dotted;
+}
+
+.summaryttt {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 80%;
+  color: black;
+}
+
+.hs {
+  margin-top: 2.5cm;
+}
+
+.summaryttt th {
+  background-color: #ccc;
+  color: black;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+nav {
+  background-color: #444;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  padding: 15px 20px;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+nav li a:hover {
+  color: #ff7f50;
+  font-size: 23px;
+}
+
+/* Adding some extra styling to make it look super stylish */
+nav li:not(:last-child) {
+  border-right: 3px solid rgb(216, 130, 130);
+}
+
+header {
+  background-image: linear-gradient(45deg, #ff7f50, #ff6b7d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+nav li {
+  transform: skewX(-20deg);
+}
+
+nav li a {
+  transform: skewX(20deg);
+}
+
+nav li:not(:last-child)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 30px;
+  width: 2px;
+  background-color: #666;
+}
+
+.active {
+  background-color: rgb(130, 0, 0);
+}
+/* details page baby*/
+
+#purchaseForm {
+  padding: 50px;
+  width: 500px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+#purchaseForm input,
+#purchaseForm select {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-input.invalid {
+  border-color: red;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.numberrr {
+  display: flex;
+  width: 104%;
+}
+
+#mobileNumber {
+  margin-left: 10px;
+}
+
+#countryCode {
+  width: 4.3cm;
+}
+
+#purchaseForm button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+#purchaseForm input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#purchaseForm input.invalid {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+#pay-btn,
+.submit-button {
+  padding: 10px;
+  font-size: large;
+  background-color: #d08b3d;
+  transition: all 0.6s;
+}
+
+#pay-btn:hover {
+  font-size: larger;
+  background-color: #b2752f;
+}
+
+.submit-button:hover {
+  font-size: larger;
+  background-color: #b2752f;
+}
+
+.detailflex {
+  display: flex;
+}
+
+.detailflex .summaryttt {
+  margin-left: 0px;
+}
+
+.detailflex .summaryttt td {
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.confirmation-form {
+  padding: 50px;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.confirmation-form h3 {
+  color: #ff4b60;
+}
+
+.confirmtbl th {
+  background-color: #787777;
+  color: #f5f5f5;
+}
+
+.conalt {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 800px) {
+  .detailflex {
+    display: block;
+  }
+
+  #continueBtn {
+    margin-left: 1.5cm;
+    margin-top: 13.7cm;
+    margin-bottom: 0px;
+  }
+
+  #purchaseForm {
+    padding: 30px;
+    padding-left: 10px;
+    width: 325px;
+  }
+
+  .detailflex .summaryttt {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  body {
+    padding: 5px;
+  }
+
+  header nav a {
+    font-size: 12px;
+  }
+
+  nav li:last-child,
+  nav li:first-child {
+    background-color: #444;
+  }
+
+  header nav .active {
+    background-color: rgb(130, 0, 0);
+  }
+
+  .confirmation-form {
+    padding: 15px;
+    width: 327px;
+  }
+
+  .confirmation-form h3 {
+    color: #ff4b60;
+    font-size: large;
+  }
+
+  .confirmtbl th {
+    background-color: #787777;
+    color: #f5f5f5;
+  }
+
+  .confirmtbl {
+    font-size: 12px;
+  }
+
+  .conalt {
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .summaryttt {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .dropdown-content {
+    width: 9cm;
+  }
+}
+
+/* Styles for the calendar wrapper */
+.wrapper {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  max-width: 450px;
+  margin: 0 auto;
+  float: inline-start;
+  /* Center the calendar on all screen sizes */
+  /* Adjusted margin for better spacing */
+}
+
+/* Styles for the calendar header */
+.wrapper header {
+  position: relative;
+  width: 100%;
+  /* Adjusted width to fit the container */
+}
+
+/* Styles for the current date */
+.current-date {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #221603;
+  color: #ffb804;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styles for the calendar icons */
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+  font-size: 20px;
+  color: #fffdd5;
+  margin: 0 auto;
+  /* Center the icons on all screen sizes */
+  max-width: 220px;
+  /* Adjusted max-width for better spacing */
+}
+
+.icons span {
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.537);
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  -webkit-text-stroke: 0.7px black;
+}
+
+.icons span:hover {
+  color: #000000c4;
+}
+
+/* Styles for the calendar weeks */
+.weeks {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.weeks li {
+  font-size: 18px;
+  color: #cd8500;
+}
+
+/* Styles for the calendar days */
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.days li {
+  font-size: 16px;
+  text-align: center;
+  color: #c98d00;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.days li.inactive {
+  color: #747474;
+  cursor: default;
+}
+
+.days li.active {
+  background-color: #5e3200;
+  border: 1px solid black;
+}
+
+.days li.selected {
+  background-color: #3e2200;
+}
+
+#dateSubmitBtn {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: #714c21;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#dateSubmitBtn:hover {
+  background-color: #dcb465;
+}
+
+.wrapper {
+  float: left;
+}
+
+.dropdown {
+  float: right;
+}
+
+#ticketSelection {
+  margin-left: 10.1cm;
+}
+
+.payimg {
+  display: flex;
+  margin-left: 4cm;
+}
+
+.payimg img {
+  height: 1.5cm;
+  margin-right: 10px;
+}
+
+/* Media query for iPhone 12 Pro mobile view */
+@media only screen and (max-width: 428px) {
+  .wrapper {
+    float: none;
+    padding: 10px;
+    /* Adjusted padding for better spacing on mobile */
+  }
+
+  .payimg {
+    display: none;
+  }
+
+  .hs {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  #ticketSelection {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .dropdown {
+    float: none;
+  }
+
+  .current-date {
+    padding: 8px;
+    /* Adjusted padding for better spacing on mobile */
+  }
+
+  .icons {
+    max-width: 180px;
+    /* Adjusted max-width for better spacing on mobile */
+  }
+
+  .days li {
+    font-size: 14px;
+    /* Reduced font size for mobile view */
+  }
+
+  #dateSubmitBtn {
+    padding: 8px 15px;
+    /* Adjusted padding for better spacing on mobile */
+  }
+}

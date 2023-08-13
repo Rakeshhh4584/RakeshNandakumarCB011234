@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tickets Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>BUY TICKETS</h1>
+      <nav>
+        <ul>
+          <li class="active"><a href="ticketspage.html">Tickets</a></li>
+          <li><a href="detailspage.html">Details</a></li>
+          <li><a href="paymentspage.html">Payments</a></li>
+          <li><a href="confirmationpage.html">Confirmation</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="calflex">
+      <div class="wrapper" disabled>
+        <header>
+          <p class="current-date"></p>
+          <div class="icons">
+            <span id="prev" class="material-symbols-rounded">prev</span>
+            <span id="next" class="material-symbols-rounded">next</span>
+          </div>
+        </header>
+        <div class="calendar">
+          <ul class="weeks">
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+          </ul>
+          <ul class="days"></ul>
+        </div>
+      </div>
+
+      <!--Guests-->
+      <div id="ticketSelection">
+        <h2>Guests</h2>
+        <div class="ticketCategory">
+          <label for="foreignerAdult">Foreigner Adults (above 15 yrs)</label>
+          <button class="decrementBtn">-</button>
+          <input type="text" id="foreignerAdult" value="0" min="0" />
+          <button class="incrementBtn">+</button>
+        </div>
+        <div class="ticketCategory">
+          <label for="foreignerChild">Foreigner Child (5 - 14 yrs)</label>
+          <button class="decrementBtn">-</button>
+          <input type="text" id="foreignerChild" value="0" min="0" />
+          <button class="incrementBtn">+</button>
+        </div>
+
+        <div class="ticketCategory">
+          <label for="slAdult">SL Adults (above 15 yrs)</label>
+          <button class="decrementBtn">-</button>
+          <input type="text" id="slAdult" value="0" min="0" />
+          <button class="incrementBtn">+</button>
+        </div>
+        <div class="ticketCategory">
+          <label for="slChild">SL Child (5 - 14 yrs)</label>
+          <button class="decrementBtn">-</button>
+          <input type="text" id="slChild" value="0" min="0" />
+          <button class="incrementBtn">+</button>
+        </div>
+
+        <div class="ticketCategory">
+          <label for="infant">Infant (below 4 yrs)</label>
+          <button class="decrementBtn">-</button>
+          <input type="text" id="infant" value="0" min="0" />
+          <button class="incrementBtn">+</button>
+        </div>
+      </div>
+    </div>
+    <!--experiment-->
+
+    <div class="blocktickets">
+      <div class="dropdown">
+        <button id="selectbutt" onclick="togglee()">
+          Click Here to Select Timelines
+        </button>
+        <div class="dropdown-content">
+          <h2>Duration</h2>
+          <label>
+            <input
+              type="checkbox"
+              name="timelines"
+              value="1"
+              onchange="handleCheckboxChange(this)"
+            />
+            07.00 am - 08.00 am
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="timelines"
+              value="2"
+              onchange="handleCheckboxChange(this)"
+            />
+            08.00 am - 09.00 am
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="timelines"
+              value="3"
+              onchange="handleCheckboxChange(this)"
+            />
+            09.00 am - 10.00 am
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="timelines"
+              value="4"
+              onchange="handleCheckboxChange(this)"
+            />
+            10.00 am - 11.00 am (Peak)
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="timelines"
+              value="5"
+              onchange="handleCheckboxChange(this)"
+            />
+            11.00 am - 12.00 pm (Peak)
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="timelines"
+              value="6"
+              onchange="handleCheckboxChange(this)"
+            />
+            12.00 pm - 01.00 pm (Peak)
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="timelines"
+              value="7"
+              onchange="handleCheckboxChange(this)"
+            />
+            01.00 pm - 02.00 pm
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="timelines"
+              value="8"
+              onchange="handleCheckboxChange(this)"
+            />
+            02.00 pm - 03.00 pm
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="timelines"
+              value="9"
+              onchange="handleCheckboxChange(this)"
+            />
+            03.00 pm - 04.00 pm (Peak)
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="timelines"
+              value="10"
+              onchange="handleCheckboxChange(this)"
+            />
+            04.00 pm - 05.00 pm (Peak)
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="timelines"
+              value="11"
+              onchange="handleCheckboxChange(this)"
+            />
+            05.00 pm - 06.00 pm (Peak)
+          </label>
+        </div>
+      </div>
+    </div>
+    <button type="submit" id="continueBtn" onclick="goto()" disabled>
+      Continue with Purchase
+    </button>
+    <h2 class="hs">Payment Summary</h2>
+    <div id="summarytbl"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
